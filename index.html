@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSA Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1 class="title">⚡ DSA Quiz ⚡</h1>
+
+    <div class="input-box">
+      <input type="text" id="name" placeholder="Enter Your Name">
+      <input type="text" id="college" placeholder="Enter College Name">
+      <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div class="quiz-box hidden" id="quizBox">
+      <h2 id="question"></h2>
+      <img id="qImage" src="" class="q-image">
+      <div id="options"></div>
+    </div>
+
+    <div class="result-box hidden" id="resultBox">
+      <h2>🎉 Quiz Completed 🎉</h2>
+      <p id="resultText"></p>
+      <button onclick="restartQuiz()">Restart</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

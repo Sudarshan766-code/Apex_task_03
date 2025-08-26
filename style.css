@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, black, violet, silver, gold);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  animation: bgAnimation 8s infinite alternate;
+}
+
+@keyframes bgAnimation {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.quiz-container {
+  max-width: 700px;
+  margin: 50px auto;
+  background: rgba(0,0,0,0.7);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px gold;
+  animation: fadeIn 1.5s ease;
+}
+
+.title {
+  color: gold;
+  text-shadow: 2px 2px 8px black;
+  margin-bottom: 15px;
+}
+
+.input-box input {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  width: 70%;
+  font-size: 16px;
+  text-align: center;
+}
+
+.input-box button {
+  background: violet;
+  color: black;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.input-box button:hover {
+  transform: scale(1.1);
+  background: gold;
+}
+
+.quiz-box h2 {
+  color: silver;
+  margin-bottom: 15px;
+  animation: fadeIn 1s ease;
+}
+
+.q-image {
+  max-width: 300px;
+  margin: 10px auto;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+
+.q-image:hover {
+  transform: scale(1.1) rotate(2deg);
+}
+
+#options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.option {
+  padding: 12px;
+  background: linear-gradient(45deg, black, silver);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+  font-weight: bold;
+  color: white;
+}
+
+.option:hover {
+  background: linear-gradient(45deg, gold, violet);
+  transform: scale(1.1);
+}
+
+.result-box {
+  animation: fadeIn 2s ease;
+}
+
+.result-box p {
+  font-size: 20px;
+  color: gold;
+  margin: 15px 0;
+}
+
+.result-box button {
+  background: black;
+  color: gold;
+  padding: 12px 25px;
+  border: 2px solid silver;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.result-box button:hover {
+  background: violet;
+  color: black;
+}
+
+.hidden { display: none; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
